@@ -3,15 +3,15 @@ import { useParams } from 'react-router'
 import { getClothesByType } from '../../helpers/getClothesByType'
 import { useDispatch, useSelector } from 'react-redux'
 import { addProduct } from '../../store/cart/cartSlice'
-import cartIcon from '../../assets/cart.svg'
-import checkIcon from '../../assets/check.svg'
+import cartIcon from '/assets/cart.svg'
+import checkIcon from '/assets/check.svg'
 import "../../styles/components/catalog/ArticleScreen.css"
 
 export const ArticleScreen = () => {
 	const { type, id } = useParams()
 	const clothes = getClothesByType(type)
 	const { name, img_name, desc, price_before, price_now } = clothes.find((clothe) => clothe.id === Number(id))
-	const imgSrc = `/src/assets/${img_name}`
+	const imgSrc = `/assets/${img_name}`
 	const dispatch = useDispatch()
 	const {products} = useSelector((state) => state.cart)
 	

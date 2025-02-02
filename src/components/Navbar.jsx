@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import gsIcon from '../assets/gs-icon-black.svg'
-import cartIcon from '../assets/cart.svg'
+import gsIcon from '/assets/gs-icon-black.svg'
+import cartIcon from '/assets/cart.svg'
 import '../styles/components/Navbar.css'
 import { Cart } from './cart/Cart'
 import { Link } from 'react-router'

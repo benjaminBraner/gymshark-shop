@@ -1,7 +1,7 @@
-import headerImg from '../assets/header.png';
-import collectionImg from '../assets/collection.png';
-import saleMenImg from '../assets/sale-1.png';
-import saleWomenImg from '../assets/sale-2.jpg';
+import headerImg from '/assets/header.png';
+import collectionImg from '/assets/collection.png';
+import saleMenImg from '/assets/sale-1.png';
+import saleWomenImg from '/assets/sale-2.jpg';
 import "../styles/components/HeroSection.css";
 
 export const HeroSection = () => {

@@ -1,4 +1,4 @@
-import gsIcon from '../../assets/gs-icon-black.svg'
+import gsIcon from '/assets/gs-icon-black.svg'
 
 export const OrderSummary = ({products, total}) => {
 

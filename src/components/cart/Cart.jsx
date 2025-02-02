@@ -1,7 +1,7 @@
 import '../../styles/components/cart/Cart.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { removeProduct, updateQuantity } from '../../store/cart/cartSlice'
-import trashIcon from '../../assets/trash.svg'
+import trashIcon from '/assets/trash.svg'
 import { useNavigate } from 'react-router'
 
 export const Cart = ({ showCart, onClickCart }) => {

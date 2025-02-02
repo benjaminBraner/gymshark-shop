@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import plusIcon from '../assets/plus.svg';
-import lessIcon from '../assets/less.svg';
+import plusIcon from '/assets/plus.svg';
+import lessIcon from '/assets/less.svg';
 import '../styles/components/FaQs.css';
 import { faqs } from '../data/faqs';
 
