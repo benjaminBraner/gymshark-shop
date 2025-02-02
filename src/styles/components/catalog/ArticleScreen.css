@@ -1,0 +1,165 @@
+
+.PlantScreen {
+     display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+     background-color: rgb(230, 230, 230);
+	margin-top: 60px;
+}
+
+.PlantScreen .plant-container {
+	background-color: white;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1.4fr;
+	align-items: center;
+	max-width: 1050px;
+	max-height: 500px;
+}
+
+.PlantScreen .plant-container .plant-img-container {
+	line-height: 2;
+}
+
+.PlantScreen .plant-container img {
+	height: 500px;
+	object-fit: cover;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	position: relative;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 50%; */
+	height: 100%;
+	box-sizing: border-box;
+	padding: 40px;
+}
+
+.details h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.4em;
+	line-height: 1em;
+	color: #444;
+}
+
+.details h2 span {
+	font-size: 0.4em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #999;
+}
+
+.details p {
+	max-width: 85%;
+	margin-left: 15%;
+	color: #333;
+	font-size: 15px;
+	margin-bottom: 36px;
+	/* line-height: 1.5em; */
+}
+
+.details h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.5em;
+	color: #a2a2a2;
+	float: left;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.details .price-before {
+	text-decoration: line-through;
+	color: #2e2e2e;
+	font-size: 0.4em;
+}
+
+.details button {
+	background: #000;
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 15px 20px;
+	margin-top: 5px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 40px;
+	float: right;
+}
+
+@media screen and (max-width: 782px) {
+	.PlantScreen .plant-container .plant-img-container {
+		line-height: 7;
+	}
+}
+
+@media screen and (max-width: 888px) {
+	.PlantScreen .plant-container .plant-img-container {
+		line-height: 4;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.PlantScreen {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--background-grey);
+		padding: 20px;
+		height: min-content;
+	}
+
+	.PlantScreen .plant-container {
+		max-height: none;
+		grid-template-rows: 1fr max-content;
+		grid-template-columns: none;
+		margin: 0;
+	}
+
+	.PlantScreen .plant-container img {
+		border-top-right-radius: 20px;
+		border-bottom-left-radius: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.PlantScreen {
+		padding: 9px;
+		height: min-content;
+	}
+}
+
+.add-to-cart-btn {
+     display: flex;
+     align-items: center;
+     gap: 8px; 
+     background-color: #000; 
+     color: white;
+     padding: 10px 15px;
+     border: none;
+     cursor: pointer;
+     font-size: 16px;
+     border-radius: 5px;
+   }
+   
+   .add-to-cart-btn.added {
+	background-color: rgb(2, 112, 44);
+	transition: all 1.3s;
+   }
+   .cart-icon {
+     width: 20px !important;
+     height: 20px !important;
+   }
+   
+   
+   

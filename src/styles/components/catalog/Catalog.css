@@ -1,0 +1,26 @@
+
+.musthave__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(250px, 200px));
+	gap: 20px;
+	justify-content: space-evenly;
+}
+@media screen and (max-width: 1150px) {
+     .musthave__grid {
+          grid-template-columns: repeat(3, minmax(250px, 200px));
+     }
+}
+
+@media screen and (max-width: 825px) {
+     .musthave__grid {
+          grid-template-columns: repeat(2, minmax(250px, 200px));
+
+     }
+}
+
+@media screen and (max-width: 550px) {
+     .musthave__grid {
+          grid-template-columns: repeat(1, minmax(250px, 200px));
+
+     }
+}

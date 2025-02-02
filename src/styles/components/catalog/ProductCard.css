@@ -1,0 +1,23 @@
+
+.musthave__card p {
+	color: #6b7280;
+}
+
+
+.musthave__card {
+     width: 100%;
+     height: auto;
+     cursor: pointer;
+}
+
+.musthave__card>h4 {
+     color: #333232;
+
+}
+
+.musthave__card>img {
+     width: 250px;
+     height: 350px;
+     object-fit: cover;
+     background-color: #9d9fa1;
+}

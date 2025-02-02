@@ -1,0 +1,47 @@
+
+
+
+
+.catalog {
+     height: max-content;
+     min-height: 100vh;
+     margin-bottom: 150px;
+}
+
+.catalog__title {
+     margin: 70px auto 20px;
+     width: fit-content;
+     margin-bottom: 20px;
+     font-size: 30px;
+     color: #333232;
+}
+
+
+.musthave__nav {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 2rem;
+     flex-wrap: wrap;
+     margin-bottom: 2rem;
+}
+
+
+.musthave-link {
+     font-size: 1rem;
+     font-weight: 600;
+     color: #6b7280;
+     transition: 0.3s;
+     cursor: default;
+}
+
+.link-active {
+     color: #000;
+}
+
+
+.musthave__nav a:hover {
+     color: var(--text-dark);
+}
+
+
